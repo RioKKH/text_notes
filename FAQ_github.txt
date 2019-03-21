@@ -1,0 +1,30 @@
+How to make new repository on Github
+================================================
+
+### Make new repository on Github first.
+- (remote) Make a new repository on Github
+- (local) clone existing repository on Github by using clone command.
+$ git local clone https://gkithub.com/RioKKH/python_example.git
+
+Add files you would like to commit on that blanch.
+$ git add <file1> <file2> ...
+$ git commit
+or you can do this like below, too.
+$ git commit -m "comment"
+then push your local repository to remote.
+$ git push origin master
+
+### Make new repository on your local first then push it to Github
+$ git init
+$ git add README.md
+$ git commit -m "My first commit"
+- To avoid typing an address of repository repeatedly, make an alias by using "remote add" command.
+$ git remote add origin https://github.com/RioKKH/c_example.git
+- Then push it to rremote-master.
+$ git push -u origin master
+- The meaning of "-u" is to add "origin master" to your reference and from next push, you just need to run like below.
+$ git push
+
+
+
+
