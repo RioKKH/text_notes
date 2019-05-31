@@ -1,4 +1,4 @@
-#. How can I recover a file I wrongly removed?
+# How can I recover a file I wrongly removed?
 
 ```shell
 git rm <filename> # Ouch!
