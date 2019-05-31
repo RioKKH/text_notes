@@ -25,6 +25,9 @@ $ git push -u origin master
 - The meaning of "-u" is to add "origin master" to your reference and from next push, you just need to run like below.
 $ git push
 
+or maybe you can make remote branch by the following way.
+$ git push --set-upstream origin <branch name>
+
 
 
 
