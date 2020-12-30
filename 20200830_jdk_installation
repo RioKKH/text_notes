@@ -1,0 +1,29 @@
+JAIST i219事前準備手順書
+
+以下のサイトの手順をみて実施した。
+https://docs.datastax.com/ja/dse/5.1/dse-dev/datastax_enterprise/install/installJdkDeb.html
+
+バージョンの確認は
+java -version
+
+jdkインストール先は
+/usr/lib/jvm
+で、tarで固められたソフトを以下のようにして解凍することでインストールすることが出来る
+
+sudo tar zxvf jdk-8u111-linux-x64.tar.gz -C /usr/lib/jvm
+
+新しいJavaバージョンを利用できることをシステムに伝える
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.8.0_111/bin/java" 1
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk1.8.0_111/bin/javac" 1
+
+新しく登録したJDKをデフォルトとして設定する
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+
+java -versionでバージョンを確認して所望のバージョンになっていることを確認する。
+
+JPFの設定
+.bashrcに以下の2行を追加する
+export PATH=${HOME}/projects/jpf-core/bin:${PATH}
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_111
+
