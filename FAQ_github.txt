@@ -11,8 +11,12 @@ $ git add <file1> <file2> ...
 $ git commit
 or you can do this like below, too.
 $ git commit -m "comment"
+$ git branch -M main
 then push your local repository to remote.
-$ git push origin master
+$ git push origin main
+
+if you are working on sub-branch and would like to update the sub-branch on github, then run following command.
+$ git push origin HEAD or <branch_name>
 
 ### Make new repository on your local first then push it to Github
 $ git init
