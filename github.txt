@@ -33,5 +33,9 @@ or maybe you can make remote branch by the following way.
 $ git push --set-upstream origin <branch name>
 
 
+If you would like to add another new branch to upstream, then run following command.
+$ git push --set-upstream origin develop
+
+
 
 
