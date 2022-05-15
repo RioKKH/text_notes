@@ -29,6 +29,13 @@ $ git push -u origin master
 - The meaning of "-u" is to add "origin master" to your reference and from next push, you just need to run like below.
 $ git push
 
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/RioKKH/MPI_example.git
+git push -u origin main
+
 or maybe you can make remote branch by the following way.
 $ git push --set-upstream origin <branch name>
 
